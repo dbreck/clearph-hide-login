@@ -34,7 +34,6 @@ if ( file_exists( CPH_HIDE_LOGIN_DIR . 'vendor/plugin-update-checker/plugin-upda
 		'cph-hide-login'
 	);
 	$cph_hide_login_updater->setBranch( 'main' );
-	$cph_hide_login_updater->getVcsApi()->enableReleaseAssets();
 }
 
 register_activation_hook( __FILE__, array( 'CPH_Hide_Login', 'activate' ) );
